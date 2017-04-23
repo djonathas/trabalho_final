@@ -32,6 +32,22 @@ module.exports = [
             "cordova.plugins.Keyboard"
         ],
         "runs": true
+    },
+    {
+        "id": "cordova-plugin-device-motion.Acceleration",
+        "file": "plugins/cordova-plugin-device-motion/www/Acceleration.js",
+        "pluginId": "cordova-plugin-device-motion",
+        "clobbers": [
+            "Acceleration"
+        ]
+    },
+    {
+        "id": "cordova-plugin-device-motion.accelerometer",
+        "file": "plugins/cordova-plugin-device-motion/www/accelerometer.js",
+        "pluginId": "cordova-plugin-device-motion",
+        "clobbers": [
+            "navigator.accelerometer"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -42,7 +58,8 @@ module.exports.metadata =
     "cordova-plugin-splashscreen": "4.0.2",
     "cordova-plugin-statusbar": "2.2.1",
     "cordova-plugin-whitelist": "1.3.1",
-    "ionic-plugin-keyboard": "2.2.1"
+    "ionic-plugin-keyboard": "2.2.1",
+    "cordova-plugin-device-motion": "1.2.4"
 };
 // BOTTOM OF METADATA
 });
